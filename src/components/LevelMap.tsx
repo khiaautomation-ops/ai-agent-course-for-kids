@@ -32,27 +32,27 @@ export function LevelMap({ playerProgress, onSelectLevel }: LevelMapProps) {
   const DiffIcon = diffBadge.icon;
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-4 sm:p-6 md:p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-6 mb-8 border-2 border-gray-700">
-          <div className="flex items-center justify-between flex-wrap gap-4">
-            <div>
-              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-400 text-3xl mb-2">🗺️ AI Agent Adventure Map</h2>
-              <p className="text-gray-300">Choose your next challenge!</p>
+        <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 border-2 border-gray-700">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="w-full sm:w-auto">
+              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-400 text-2xl sm:text-3xl mb-2">🗺️ AI Agent Adventure Map</h2>
+              <p className="text-gray-300 text-sm sm:text-base">Choose your next challenge!</p>
             </div>
-            <div className="flex items-center gap-6">
-              <div className={`${diffBadge.color} rounded-xl px-4 py-2 flex items-center gap-2 shadow-lg`}>
-                <DiffIcon className="w-5 h-5 text-white" />
-                <span className="text-white">{diffBadge.text}</span>
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
+              <div className={`${diffBadge.color} rounded-xl px-3 py-2 sm:px-4 flex items-center gap-2 shadow-lg`}>
+                <DiffIcon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                <span className="text-white text-sm sm:text-base">{diffBadge.text}</span>
               </div>
-              <div className="bg-gray-800/80 rounded-xl px-6 py-3 flex items-center gap-2 border border-gray-700">
-                <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-                <span className="text-yellow-400 text-xl">{playerProgress.totalStars}</span>
+              <div className="bg-gray-800/80 rounded-xl px-4 py-2 sm:px-6 sm:py-3 flex items-center gap-2 border border-gray-700">
+                <Star className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400 fill-yellow-400" />
+                <span className="text-yellow-400 text-lg sm:text-xl">{playerProgress.totalStars}</span>
               </div>
-              <div className="bg-gray-800/80 rounded-xl px-6 py-3 flex items-center gap-2 border border-gray-700">
-                <Award className="w-6 h-6 text-amber-400" />
-                <span className="text-amber-400 text-xl">{playerProgress.badges.length}</span>
+              <div className="bg-gray-800/80 rounded-xl px-4 py-2 sm:px-6 sm:py-3 flex items-center gap-2 border border-gray-700">
+                <Award className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400" />
+                <span className="text-amber-400 text-lg sm:text-xl">{playerProgress.badges.length}</span>
               </div>
             </div>
           </div>
@@ -60,12 +60,12 @@ export function LevelMap({ playerProgress, onSelectLevel }: LevelMapProps) {
 
         {/* Badges Display */}
         {playerProgress.badges.length > 0 && (
-          <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-6 mb-8 border-2 border-gray-700">
-            <h3 className="text-yellow-400 text-xl mb-4">🏅 Your Badges</h3>
-            <div className="flex flex-wrap gap-3">
+          <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 border-2 border-gray-700">
+            <h3 className="text-yellow-400 text-lg sm:text-xl mb-3 sm:mb-4">🏅 Your Badges</h3>
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {playerProgress.badges.map((badge, index) => (
-                <div key={index} className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-xl px-6 py-3 shadow-lg shadow-yellow-500/30">
-                  <span className="text-black">{badge}</span>
+                <div key={index} className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-xl px-4 py-2 sm:px-6 sm:py-3 shadow-lg shadow-yellow-500/30">
+                  <span className="text-black text-sm sm:text-base">{badge}</span>
                 </div>
               ))}
             </div>
@@ -73,7 +73,7 @@ export function LevelMap({ playerProgress, onSelectLevel }: LevelMapProps) {
         )}
 
         {/* Level Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {levels.map((level) => {
             const isUnlocked = level.id <= playerProgress.level;
             const isCompleted = playerProgress.completedLevels.has(level.id);
@@ -85,20 +85,20 @@ export function LevelMap({ playerProgress, onSelectLevel }: LevelMapProps) {
                   disabled={!isUnlocked}
                   className={`w-full h-full p-0 overflow-hidden ${!isUnlocked ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                  <div className={`w-full bg-gradient-to-br ${level.color} p-6 h-full flex flex-col items-center justify-center gap-3 relative hover:scale-105 transition-transform duration-300`}>
+                  <div className={`w-full bg-gradient-to-br ${level.color} p-4 sm:p-6 h-full min-h-[140px] sm:min-h-[160px] flex flex-col items-center justify-center gap-2 sm:gap-3 relative hover:scale-105 transition-transform duration-300`}>
                     {!isUnlocked && (
                       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center">
-                        <Lock className="w-12 h-12 text-white" />
+                        <Lock className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
                       </div>
                     )}
                     
-                    <div className="text-6xl mb-2">{level.icon}</div>
-                    <p className="text-white text-center">{level.title}</p>
-                    <div className="text-sm text-white/80">Level {level.id}</div>
+                    <div className="text-4xl sm:text-5xl md:text-6xl mb-1 sm:mb-2">{level.icon}</div>
+                    <p className="text-white text-center text-xs sm:text-sm md:text-base px-2">{level.title}</p>
+                    <div className="text-xs sm:text-sm text-white/80">Level {level.id}</div>
                     
                     {isCompleted && (
-                      <div className="absolute top-2 right-2">
-                        <CheckCircle className="w-8 h-8 text-green-300 fill-green-300" />
+                      <div className="absolute top-1 right-1 sm:top-2 sm:right-2">
+                        <CheckCircle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-green-300 fill-green-300" />
                       </div>
                     )}
                   </div>
@@ -109,12 +109,12 @@ export function LevelMap({ playerProgress, onSelectLevel }: LevelMapProps) {
         </div>
 
         {/* Progress Bar */}
-        <div className="mt-8 bg-gray-900/80 backdrop-blur-md rounded-2xl p-6 border-2 border-gray-700">
+        <div className="mt-6 sm:mt-8 bg-gray-900/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border-2 border-gray-700">
           <div className="flex items-center justify-between mb-3">
-            <p className="text-gray-300">Overall Progress</p>
-            <p className="text-yellow-400">{playerProgress.completedLevels.size} / {levels.length}</p>
+            <p className="text-gray-300 text-sm sm:text-base">Overall Progress</p>
+            <p className="text-yellow-400 text-sm sm:text-base">{playerProgress.completedLevels.size} / {levels.length}</p>
           </div>
-          <div className="w-full bg-gray-800 rounded-full h-4 overflow-hidden border border-gray-700">
+          <div className="w-full bg-gray-800 rounded-full h-3 sm:h-4 overflow-hidden border border-gray-700">
             <div
               className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 h-full rounded-full transition-all duration-500 shadow-lg shadow-yellow-500/50"
               style={{ width: `${(playerProgress.completedLevels.size / levels.length) * 100}%` }}

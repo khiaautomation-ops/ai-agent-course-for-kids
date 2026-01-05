@@ -49,13 +49,13 @@ export function LevelContent({ level }: LevelContentProps) {
   return (
     <div>
       {/* Progress Dots */}
-      <div className="flex justify-center gap-2 mb-6">
+      <div className="flex justify-center gap-1.5 sm:gap-2 mb-4 sm:mb-6">
         {slides.map((_, index) => (
           <motion.div
             key={index}
             className={`h-2 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? 'w-8 bg-yellow-400 shadow-lg shadow-yellow-500/50'
+                ? 'w-6 sm:w-8 bg-yellow-400 shadow-lg shadow-yellow-500/50'
                 : index < currentSlide || completedSlides.has(index)
                 ? 'w-2 bg-green-400'
                 : 'w-2 bg-gray-600'
@@ -82,36 +82,36 @@ export function LevelContent({ level }: LevelContentProps) {
           transition={{ duration: 0.3 }}
         >
           {/* Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-6 sm:mb-8">
             <motion.div
-              className="text-8xl mb-4 inline-block"
+              className="text-6xl sm:text-7xl md:text-8xl mb-3 sm:mb-4 inline-block"
               animate={{ rotate: [0, 10, -10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
               {slide.emoji}
             </motion.div>
-            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-400 text-4xl">{slide.title}</h2>
+            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-400 text-2xl sm:text-3xl md:text-4xl px-4">{slide.title}</h2>
           </div>
 
           {/* Content Card */}
-          <Card className="bg-gray-800/80 border-gray-700 p-8 mb-8">
+          <Card className="bg-gray-800/80 border-gray-700 p-4 sm:p-6 md:p-8 mb-6 sm:mb-8">
             {slide.interactive ? (
               <SlideContent slide={slide} />
             ) : (
-              <p className="text-gray-200 text-xl leading-relaxed text-center">
+              <p className="text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed text-center px-2">
                 {slide.content}
               </p>
             )}
           </Card>
 
           {/* Navigation */}
-          <div className="flex justify-between items-center">
-            <div className="text-gray-400">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
+            <div className="text-gray-400 text-sm sm:text-base">
               Slide {currentSlide + 1} of {totalSlides}
             </div>
             <Button
               onClick={handleNext}
-              className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 hover:from-yellow-500 hover:via-amber-600 hover:to-yellow-700 text-black px-6 py-3 shadow-lg shadow-yellow-500/30"
+              className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 hover:from-yellow-500 hover:via-amber-600 hover:to-yellow-700 text-black px-6 py-3 shadow-lg shadow-yellow-500/30 w-full sm:w-auto"
             >
               {currentSlide < totalSlides - 1 ? (
                 <>
@@ -136,10 +136,10 @@ export function LevelContent({ level }: LevelContentProps) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-6 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-6 text-center"
+          className="mt-4 sm:mt-6 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-4 sm:p-6 text-center"
         >
-          <Check className="w-12 h-12 mx-auto mb-2 text-white" />
-          <p className="text-white text-xl">🎉 Activity Completed!</p>
+          <Check className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 text-white" />
+          <p className="text-white text-lg sm:text-xl">🎉 Activity Completed!</p>
         </motion.div>
       )}
     </div>

@@ -384,27 +384,27 @@ export function QuizChallenge({ level, difficulty, onComplete }: QuizChallengePr
 
   return (
     <div>
-      <div className="mb-6">
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="text-yellow-400 text-2xl">Question {currentQuestion + 1} of {questions.length}</h3>
-          <div className="flex gap-3 items-center">
+      <div className="mb-4 sm:mb-6">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-0 mb-4">
+          <h3 className="text-yellow-400 text-lg sm:text-xl md:text-2xl">Question {currentQuestion + 1} of {questions.length}</h3>
+          <div className="flex flex-wrap gap-2 sm:gap-3 items-center">
             {difficulty === 'hard' && (
-              <div className={`flex items-center gap-2 px-4 py-2 rounded-lg ${
+              <div className={`flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg ${
                 timeLeft <= 10 ? 'bg-red-500/30 animate-pulse border-2 border-red-500' : 'bg-gray-800/80 border border-gray-700'
               }`}>
-                <Clock className="w-5 h-5 text-yellow-400" />
-                <span className={timeLeft <= 10 ? 'text-red-300' : 'text-yellow-400'}>{timeLeft}s</span>
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
+                <span className={`text-sm sm:text-base ${timeLeft <= 10 ? 'text-red-300' : 'text-yellow-400'}`}>{timeLeft}s</span>
               </div>
             )}
-            <div className="text-yellow-400 bg-gray-800/80 px-4 py-2 rounded-lg border border-gray-700">
+            <div className="text-yellow-400 bg-gray-800/80 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg border border-gray-700 text-sm sm:text-base">
               Score: {correctAnswers}/{questions.length}
             </div>
           </div>
         </div>
         
         {/* Difficulty Badge */}
-        <div className="flex items-center gap-2 mb-4">
-          <div className={`px-3 py-1 rounded-full text-sm ${
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <div className={`px-3 py-1 rounded-full text-xs sm:text-sm ${
             difficulty === 'easy' ? 'bg-amber-500/30 text-amber-200 border border-amber-500/50' :
             difficulty === 'medium' ? 'bg-yellow-500/30 text-yellow-200 border border-yellow-500/50' :
             'bg-orange-500/30 text-orange-200 border border-orange-500/50'
@@ -416,7 +416,7 @@ export function QuizChallenge({ level, difficulty, onComplete }: QuizChallengePr
           {difficulty === 'easy' && !showFeedback && (
             <Button
               onClick={() => setShowHint(!showHint)}
-              className="bg-yellow-500/30 hover:bg-yellow-500/50 text-yellow-200 px-3 py-1 text-sm border border-yellow-500/50"
+              className="bg-yellow-500/30 hover:bg-yellow-500/50 text-yellow-200 px-3 py-1 text-xs sm:text-sm border border-yellow-500/50"
             >
               {showHint ? '🔒 Hide Hint' : '💡 Show Hint'}
             </Button>
