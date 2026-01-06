@@ -4,12 +4,12 @@ import { Button } from '../ui/button';
 import { Check, X, Trophy } from 'lucide-react';
 
 const scenarios = [
-  { task: "What's 12 × 9?", correctTool: '🧮', toolName: 'Calculator', explanation: 'Math problems need the Calculator!' },
-  { task: "Message my friend about the Fortnite tournament tomorrow", correctTool: '📧', toolName: 'Message', explanation: 'Sending messages uses the Message Tool!' },
-  { task: "Find cool Roblox games to play", correctTool: '🔍', toolName: 'Search', explanation: 'Finding stuff online needs the Search Tool!' },
-  { task: "When is my soccer practice this week?", correctTool: '📅', toolName: 'Calendar', explanation: 'Checking schedules uses the Calendar!' },
-  { task: "How do I make slime at home?", correctTool: '🔍', toolName: 'Search', explanation: 'Finding DIY guides needs the Search Tool!' },
-  { task: "If I have 100 V-Bucks and spend 35, how many left?", correctTool: '🧮', toolName: 'Calculator', explanation: 'Money math needs the Calculator!' },
+  { task: "Calculate the quarterly ROI percentage", correctTool: '🧮', toolName: 'Calculator', explanation: 'Math and calculations need the Calculator!' },
+  { task: "Send status update to the project team", correctTool: '📧', toolName: 'Email', explanation: 'Sending messages uses the Email Tool!' },
+  { task: "Find current market trends in AI technology", correctTool: '🔍', toolName: 'Search', explanation: 'Finding information online needs the Web Search Tool!' },
+  { task: "When is the quarterly review meeting?", correctTool: '📅', toolName: 'Calendar', explanation: 'Checking schedules uses the Calendar!' },
+  { task: "Research best practices for remote team management", correctTool: '🔍', toolName: 'Search', explanation: 'Finding guides and articles needs the Web Search Tool!' },
+  { task: "If revenue is $150k and costs are $92k, what's the profit margin?", correctTool: '🧮', toolName: 'Calculator', explanation: 'Financial calculations need the Calculator!' },
 ];
 
 const tools = [

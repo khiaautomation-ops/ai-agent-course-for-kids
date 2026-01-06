@@ -14,16 +14,16 @@ const agents = [
 
 const scenarios = [
   {
-    task: 'Create a YouTube Gaming Video',
-    description: 'Make an awesome gaming video for YouTube',
+    task: 'Create a Market Research Report',
+    description: 'Research competitors and create a comprehensive analysis report',
     correctAgents: [1, 2, 3, 4], // Research, Writing, Creative, Quality
-    explanation: 'You need Research to find game info, Writing for the script, Creative for thumbnails, and Quality to check everything!',
+    explanation: 'You need Research to gather data, Writing for the report, Creative for charts/visuals, and Quality to review!',
   },
   {
-    task: 'Build a Minecraft Calculator',
-    description: 'Create a working calculator using Minecraft redstone',
+    task: 'Build a Data Dashboard',
+    description: 'Create an interactive dashboard for business metrics',
     correctAgents: [5, 6, 3, 4], // Code, Math, Creative, Quality
-    explanation: 'You need Code for redstone logic, Math for calculations, Creative for cool design, and Quality to test if it works!',
+    explanation: 'You need Code to build it, Math for calculations, Creative for visualization design, and Quality to test!',
   },
 ];
 

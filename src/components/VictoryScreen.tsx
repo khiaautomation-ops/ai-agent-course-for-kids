@@ -68,7 +68,7 @@ export function VictoryScreen({ playerProgress, onRestart }: VictoryScreenProps)
               🎉 Congratulations! 🎉
             </h1>
             <p className="text-gray-300 text-2xl sm:text-3xl mb-6 sm:mb-8 px-4">
-              You've completed the AI Agent Academy!
+              You've mastered AI Agent Builder for Dummies!
             </p>
           </div>
         </div>

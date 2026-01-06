@@ -23,291 +23,291 @@ const quizData: Record<number, Question[]> = {
     {
       question: "What is an AI Agent?",
       options: [
-        "A robot toy you play with",
-        "A smart helper like Siri or Alexa that can think and do tasks",
-        "A video game character that just stands there",
-        "A regular computer program"
+        "A simple chatbot that follows a script",
+        "An intelligent system that can think, make decisions, and complete tasks autonomously",
+        "A basic automation tool",
+        "Just a search engine"
       ],
       correctAnswer: 1,
-      explanation: "An AI Agent is a smart digital helper that can think, make decisions, and help you - like Siri, Alexa, or smart NPCs in games!"
+      explanation: "An AI Agent is an intelligent system that can understand context, make decisions, use tools, and complete complex tasks - like Siri, Alexa, or advanced AI assistants!"
     },
     {
       question: "Which of these can an AI Agent do?",
       options: [
-        "Only play music",
-        "Help with homework, search the web, and remember things",
-        "Nothing useful",
-        "Only tell jokes"
+        "Only answer pre-programmed questions",
+        "Understand requests, use multiple tools, and complete multi-step tasks",
+        "Nothing without constant human supervision",
+        "Only perform one fixed function"
       ],
       correctAnswer: 1,
-      explanation: "AI Agents are super helpful! They can help with homework, search for info, remember stuff, and do lots of useful tasks!"
+      explanation: "AI Agents can understand natural language, decide which tools to use, complete complex multi-step tasks, and adapt to different situations!"
     },
     {
-      question: "If you ask an AI 'Help me with 7 times 8 and tell me if it's more than 50', what does it do?",
+      question: "If you ask an AI 'Schedule a team meeting next week and send invites', what does it do?",
       options: [
-        "Just says a random number",
-        "Solves 7×8 AND compares it to 50 to answer both parts",
-        "Says it can't help",
-        "Only does the math part"
+        "Just creates a calendar event",
+        "Checks calendars for availability, schedules the meeting, AND sends email invites to all participants",
+        "Asks you to do it manually",
+        "Only checks the calendar"
       ],
       correctAnswer: 1,
-      explanation: "The AI Agent can do the math (7×8=56) AND compare it (56 is more than 50) to give you a complete answer!"
+      explanation: "The AI Agent can perform multiple actions: check availability, create the event, and send invites - completing the entire workflow!"
     }
   ],
   2: [
     {
       question: "What are tools for AI Agents?",
       options: [
-        "Hammers and screwdrivers",
-        "Digital helpers like search, calculator, and messaging",
-        "Toys",
+        "Physical hardware components",
+        "APIs, databases, and digital services the agent can access to complete tasks",
+        "Just decorative features",
         "Nothing important"
       ],
       correctAnswer: 1,
-      explanation: "AI Agent tools are like apps - search engines, calculators, calendars, and messaging that help them do different jobs!"
+      explanation: "AI Agent tools are APIs and services like web search, email, calculators, databases, and calendars that extend the agent's capabilities!"
     },
     {
-      question: "If you ask an AI 'Find cool Minecraft building ideas', which tool would it use?",
+      question: "If you ask an AI 'Find the latest competitor pricing data', which tool would it use?",
       options: [
         "Calculator",
-        "Messaging",
-        "Search Tool to look on the internet",
+        "Email sender",
+        "Web Search API to query the internet",
         "Calendar"
       ],
       correctAnswer: 2,
-      explanation: "The Search Tool lets the AI look up stuff on the internet - perfect for finding Minecraft building ideas!"
+      explanation: "The Web Search tool allows the AI to query search engines and find current information from the internet!"
     },
     {
       question: "Why do AI Agents need different tools?",
       options: [
-        "To look fancy",
-        "Each tool does a different job - like math, search, or messages",
-        "They don't need tools",
-        "Just for fun"
+        "To make them look more complex",
+        "Each tool provides specific capabilities - search for data, calculate for math, email for communication",
+        "They don't actually need tools",
+        "Just for demonstration purposes"
       ],
       correctAnswer: 1,
-      explanation: "Different tools do different jobs! Just like you use a pencil for writing and scissors for cutting, AI uses different digital tools!"
+      explanation: "Different tools serve different purposes! Just like apps on your phone, each tool gives the agent specific capabilities to complete various tasks!"
     }
   ],
   3: [
     {
       question: "What is short-term memory for an AI Agent?",
       options: [
-        "Memories from last year",
-        "Remembering what you're talking about RIGHT NOW",
-        "Forgetting everything",
-        "Only remembering numbers"
+        "Permanent data storage",
+        "Remembering the current conversation context and recent interactions",
+        "Forgetting everything immediately",
+        "Only numerical data"
       ],
       correctAnswer: 1,
-      explanation: "Short-term memory helps the AI remember your current conversation - like what game you were just talking about!"
+      explanation: "Short-term memory helps the AI remember the current conversation context - what you're discussing right now and recent messages!"
     },
     {
       question: "Why is memory important for AI Agents?",
       options: [
-        "It's not important",
-        "So they can remember your favorite things and give better help",
-        "Only to slow them down",
-        "To confuse people"
+        "It's not really important",
+        "So they can provide personalized, context-aware responses and remember user preferences",
+        "Only to slow down processing",
+        "To confuse users"
       ],
       correctAnswer: 1,
-      explanation: "Memory helps AI remember your favorite games, pets' names, and what you like - making them way more helpful!"
+      explanation: "Memory enables personalization! The AI can remember your preferences, past conversations, and provide more relevant, contextual assistance!"
     },
     {
-      question: "If you tell an AI 'My favorite game is Minecraft' on Monday, and ask 'What's my favorite game?' on Wednesday, what should it do?",
+      question: "If you tell an AI 'I prefer morning meetings' on Monday, and ask 'Schedule a team sync' on Wednesday, what should it do?",
       options: [
-        "Say it doesn't know",
-        "Remember and say 'Minecraft'",
-        "Make up a different game",
-        "Ask you to repeat everything"
+        "Ask for your preference again",
+        "Remember your preference and suggest morning time slots",
+        "Schedule at a random time",
+        "Refuse to schedule"
       ],
       correctAnswer: 1,
-      explanation: "With long-term memory, the AI remembers info from earlier conversations - just like a good friend!"
+      explanation: "With long-term memory, the AI remembers preferences from earlier conversations and applies them to future requests!"
     }
   ],
   4: [
     {
       question: "What makes a good prompt?",
       options: [
-        "Being confusing and unclear",
-        "Being clear, specific, and friendly",
-        "Using only one word",
-        "Being rude"
+        "Being vague and open-ended",
+        "Being clear, specific, and providing context",
+        "Using as few words as possible",
+        "Being ambiguous"
       ],
       correctAnswer: 1,
-      explanation: "Good prompts are like clear game instructions - say exactly what you want, give details, and be friendly!"
+      explanation: "Good prompts are clear, specific, and provide context - telling the AI exactly what you want, who it's for, and any constraints!"
     },
     {
       question: "Which is a better prompt?",
       options: [
-        "Tell me things",
-        "Explain how to build a treehouse in Minecraft with simple steps",
-        "Stuff",
-        "Whatever"
+        "Write about marketing",
+        "Write a 500-word blog post about email marketing best practices for small businesses",
+        "Marketing stuff",
+        "Content"
       ],
       correctAnswer: 1,
-      explanation: "The second one is specific (Minecraft treehouse), gives details (simple steps), and clear (explain how to build)!"
+      explanation: "The second prompt is specific (email marketing), defines length (500 words), format (blog post), and audience (small businesses)!"
     },
     {
-      question: "Why should you be clear when talking to AI?",
+      question: "Why should you be clear when prompting AI?",
       options: [
         "It doesn't matter",
-        "Clear requests help the AI understand and give you better answers",
+        "Clear prompts help the AI understand exactly what you need and produce better results",
         "To waste time",
-        "AI doesn't need clear instructions"
+        "AI can read your mind anyway"
       ],
       correctAnswer: 1,
-      explanation: "Clear, specific prompts help AI understand exactly what you need - like telling your teammate the plan in a game!"
+      explanation: "Clear, specific prompts eliminate ambiguity and help AI understand your exact requirements, leading to much better outputs!"
     }
   ],
   5: [
     {
       question: "What is the first step in AI Agent planning?",
       options: [
-        "Do random things",
-        "Understand what the goal is",
-        "Give up",
-        "Use every tool at once"
+        "Execute immediately",
+        "Understand and clarify the goal or task",
+        "Give up if it's complex",
+        "Use random tools"
       ],
       correctAnswer: 1,
-      explanation: "First, figure out what you want to do! Like planning a Minecraft build - know what you want to make first!"
+      explanation: "First, the agent must understand what you're trying to accomplish - define the goal clearly before planning steps!"
     },
     {
-      question: "If planning a school project about space, what should an AI Agent do?",
+      question: "If planning a market research report, what should an AI Agent do?",
       options: [
-        "Start writing random facts",
-        "Break it into steps: research planets, make outline, write report, add pictures",
-        "Only do one tiny part",
-        "Ignore the deadline"
+        "Write random information",
+        "Break it down: identify competitors, gather data, analyze findings, create structured report",
+        "Only do one small part",
+        "Skip the planning phase"
       ],
       correctAnswer: 1,
-      explanation: "Good planning means breaking big tasks into smaller steps you can do one at a time!"
+      explanation: "Good planning means decomposing the large task into manageable steps that can be completed sequentially!"
     },
     {
       question: "Why is planning important for AI Agents?",
       options: [
-        "It wastes time",
-        "It helps them complete big tasks successfully by breaking them into steps",
-        "It's not important",
-        "Only easy stuff needs planning"
+        "It wastes processing time",
+        "It enables agents to handle complex, multi-step tasks systematically and reliably",
+        "It's not actually important",
+        "Only simple tasks need planning"
       ],
       correctAnswer: 1,
-      explanation: "Planning helps with big tasks! Like beating a hard video game - you need a strategy and steps to follow!"
+      explanation: "Planning allows agents to tackle complex tasks by breaking them into manageable steps with clear objectives and tool usage!"
     }
   ],
   6: [
     {
       question: "What is a multi-agent system?",
       options: [
-        "One agent doing everything alone",
-        "Multiple AI Agents working together like a team",
-        "Agents fighting each other",
-        "No agents at all"
+        "One agent doing everything",
+        "Multiple specialized AI Agents working together collaboratively",
+        "Agents competing against each other",
+        "No coordination between agents"
       ],
       correctAnswer: 1,
-      explanation: "Multi-agent systems are like a gaming squad - different AI Agents with special skills working together!"
+      explanation: "Multi-agent systems are teams of specialized AI agents that collaborate, each handling tasks they're optimized for!"
     },
     {
       question: "Why use multiple agents instead of just one?",
       options: [
-        "It's always worse",
-        "Different agents can be experts at different things, like a sports team",
-        "To make things confusing",
-        "One agent is always better"
+        "It's always less efficient",
+        "Different agents can specialize in specific tasks, like a professional team",
+        "To make things unnecessarily complicated",
+        "One generalist agent is always better"
       ],
       correctAnswer: 1,
-      explanation: "Like in Fortnite or Among Us, having a team where everyone has special skills is way better than going solo!"
+      explanation: "Specialization improves performance! Like a company with departments, each agent excels at specific tasks - research, writing, analysis, etc."
     },
     {
-      question: "For creating a YouTube video about gaming, which agents might work together?",
+      question: "For creating a comprehensive business report, which agents might work together?",
       options: [
         "Only one agent does everything",
-        "Script Writer, Video Editor, Thumbnail Designer, and Quality Checker agents",
+        "Research Agent (data gathering), Analysis Agent (insights), Writing Agent (report), QA Agent (review)",
         "No agents needed",
-        "Agents that don't talk to each other"
+        "Agents that don't communicate"
       ],
       correctAnswer: 1,
-      explanation: "Different agents can handle writing, editing, design, and checking - teamwork makes the video better!"
+      explanation: "Different specialized agents handle their expertise areas - research, analysis, writing, and quality assurance - producing higher quality results!"
     }
   ],
   7: [
     {
       question: "Why do we test AI Agents?",
       options: [
-        "Testing is not important",
-        "To make sure they work correctly and give good answers",
-        "To break them on purpose",
-        "Just for fun"
+        "Testing is unnecessary",
+        "To ensure accuracy, reliability, safety, and proper functionality",
+        "To intentionally break them",
+        "Just for show"
       ],
       correctAnswer: 1,
-      explanation: "Testing makes sure your AI Agent works great! Like testing a game before you share it with friends!"
+      explanation: "Testing ensures your AI Agent works correctly, handles edge cases, and produces accurate, safe results before deployment!"
     },
     {
       question: "What should you check when testing an AI Agent?",
       options: [
-        "Nothing at all",
-        "Does it answer questions right? Use correct tools? Remember stuff?",
-        "Only the color",
-        "How loud it is"
+        "Nothing specific",
+        "Response accuracy, tool selection, memory retention, error handling, and safety",
+        "Only the visual interface",
+        "Just run it once"
       ],
       correctAnswer: 1,
-      explanation: "Test if it gives good answers, picks the right tools, and remembers things - like making sure everything works!"
+      explanation: "Comprehensive testing covers accuracy, appropriate tool usage, memory functionality, edge case handling, and safety protocols!"
     },
     {
-      question: "If an AI gives a wrong answer during testing, what should you do?",
+      question: "If an AI gives incorrect results during testing, what should you do?",
       options: [
-        "Ignore it and hope it fixes itself",
-        "Write down the problem and improve the AI Agent",
-        "Delete everything forever",
-        "Never test again"
+        "Ignore it and hope it improves",
+        "Document the issue, analyze the root cause, and refine the agent",
+        "Delete everything immediately",
+        "Stop testing entirely"
       ],
       correctAnswer: 1,
-      explanation: "Finding bugs is good! Write them down and fix them to make your AI Agent better - just like game developers do!"
+      explanation: "Finding issues during testing is valuable! Document problems, understand why they occurred, and iteratively improve the agent!"
     }
   ],
   8: [
     {
       question: "What do AI Agents use to complete different tasks?",
       options: [
-        "Magic powers",
-        "Tools (search, calculator) and smart planning",
+        "Magic or undefined processes",
+        "Combination of tools (APIs, services), planning algorithms, and decision-making logic",
         "Random guessing",
-        "Nothing special"
+        "Nothing systematic"
       ],
       correctAnswer: 1,
-      explanation: "AI Agents use digital tools and smart planning - like having the right items and a good strategy in a game!"
+      explanation: "AI Agents combine tool access, planning capabilities, and decision-making logic to systematically complete complex tasks!"
     },
     {
-      question: "Which helps AI Agents get better over time?",
+      question: "Which helps AI Agents improve over time?",
       options: [
-        "Forgetting everything",
-        "Memory so they remember and learn from past conversations",
-        "Being slower",
-        "Ignoring users"
+        "Forgetting all past interactions",
+        "Memory systems that store context, preferences, and learned patterns",
+        "Operating slower",
+        "Ignoring feedback"
       ],
       correctAnswer: 1,
-      explanation: "Memory helps AI remember what works and what you like - making them more helpful every time you talk to them!"
+      explanation: "Memory allows agents to learn from interactions, remember preferences, and continuously improve their assistance quality!"
     },
     {
-      question: "What makes you a good AI Agent Builder?",
+      question: "What makes you a proficient AI Agent Builder?",
       options: [
-        "Never testing anything",
-        "Understanding prompts, tools, memory, planning, teams, and testing",
-        "Only knowing one thing",
-        "Not learning anything new"
+        "Never testing or iterating",
+        "Understanding prompting, tool integration, memory systems, planning, multi-agent architectures, and testing",
+        "Only knowing one concept",
+        "Avoiding learning new techniques"
       ],
       correctAnswer: 1,
-      explanation: "Great AI builders understand all the pieces: how to talk to AI, give it tools, help it remember, plan, work in teams, and test!"
+      explanation: "Expert AI builders understand the full stack: prompt engineering, tool integration, memory management, planning, collaboration, and quality assurance!"
     },
     {
-      question: "How can a team of agents work better than one agent alone?",
+      question: "How can multiple specialized agents outperform a single generalist agent?",
       options: [
-        "They can't work better",
-        "Each agent has special skills, like players on a sports team",
-        "By fighting each other",
-        "Teams always work worse"
+        "They can't - one is always better",
+        "Each agent optimizes for specific tasks, enabling better quality through specialization",
+        "By competing and blocking each other",
+        "Multiple agents always perform worse"
       ],
       correctAnswer: 1,
-      explanation: "Agent teams are powerful! Each one does what they're best at - like having a goalie, defenders, and strikers in soccer!"
+      explanation: "Specialization is powerful! Like expert teams, each agent excels at their domain, producing higher quality results than a generalist!"
     }
   ]
 };

@@ -48,10 +48,10 @@ export function GameStart({ onStart }: GameStartProps) {
               <Bot className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 text-black" />
             </div>
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 mb-4">
-              <span className="block text-3xl sm:text-5xl md:text-6xl mb-2">🤖 AI Agent Academy 🚀</span>
+              <span className="block text-3xl sm:text-5xl md:text-6xl mb-2">🤖 AI Agent Builder for Dummies 🚀</span>
             </h1>
             <p className="text-gray-300 text-base sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-              Learn to build AI Agents through fun games and challenges! Like leveling up in your favorite game, but you're learning real AI skills!
+              Master AI Agent building through interactive lessons and hands-on challenges! No experience needed - start from zero to hero!
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export function GameStart({ onStart }: GameStartProps) {
         </Button>
 
         <div className="mt-6 sm:mt-8 text-gray-400 text-xs sm:text-sm">
-          <p>Perfect for ages 9-13 • Learn by Playing!</p>
+          <p>For beginners & professionals • Interactive learning made simple!</p>
         </div>
       </div>
     </div>

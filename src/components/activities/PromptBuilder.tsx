@@ -5,15 +5,15 @@ import { Trophy, Check, X } from 'lucide-react';
 
 const promptPieces = {
   good: [
-    { id: 1, text: 'Explain', type: 'action', correct: true },
-    { id: 2, text: 'how to build a treehouse in Minecraft', type: 'topic', correct: true },
-    { id: 3, text: 'with easy steps', type: 'style', correct: true },
-    { id: 4, text: 'for beginners', type: 'audience', correct: true },
+    { id: 1, text: 'Write', type: 'action', correct: true },
+    { id: 2, text: 'a 500-word blog post about email marketing strategies', type: 'topic', correct: true },
+    { id: 3, text: 'with practical examples', type: 'style', correct: true },
+    { id: 4, text: 'for small business owners', type: 'audience', correct: true },
   ],
   bad: [
     { id: 5, text: 'Tell me', type: 'action', correct: false },
-    { id: 6, text: 'random stuff', type: 'topic', correct: false },
-    { id: 7, text: 'I guess', type: 'style', correct: false },
+    { id: 6, text: 'some stuff about business', type: 'topic', correct: false },
+    { id: 7, text: 'whatever', type: 'style', correct: false },
   ],
 };
 
